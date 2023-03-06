@@ -1,0 +1,973 @@
+
+
+/* ############################################ */
+/*                  1.CSS RESET                 */
+/* ############################################ */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Gordita', sans-serif;
+    background-color:var(--bg-color);
+    transition:  background-color 0.5s linear;
+    -webkit-transition:  background-color 0.5s linear;
+    -moz-transition:  background-color 0.5s linear;
+    -ms-transition:  background-color 0.5s linear;
+    -o-transition:  background-color 0.5s linear;
+}
+ 
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* ########################################## */
+  /*               2.CUSTOM RESET               */
+  /* ########################################## */
+
+/* ------- Custom Font Family ------ */
+
+   @import url('https://fonts.cdnfonts.com/css/gordita?styles=44677,44675,44671');
+
+                
+
+
+/* ----------- 2.1 Basic Reset ---------- */
+:is(a, a:active)
+{
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+
+
+
+/* -------------- 3 Custom Classes -------------- */
+
+.wrap{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.flx{
+    display: flex;
+    align-items: center;
+}
+
+
+/* ############################################ */
+/*                    4.ROOT                    */
+/* ############################################ */
+:root {
+
+    /* --------- 4.1 Font -------- */
+    --font-1: clamp(1.50rem, calc(1.07rem + 2.14vw), 3.00rem);  /* 48px / 24px H1*/
+    --font-2: clamp(1.50rem, calc(1.36rem + 0.71vw), 2.00rem);  /* 32px / 24px H2*/
+    --font-3: clamp(1.13rem, calc(1.02rem + 0.54vw), 1.50rem); /* 24px / 18px H3*/
+    --font-p: clamp(0.88rem, calc(0.80rem + 0.36vw), 1.13rem);  /* 18px / 14px P*/
+
+
+    /* ------------ 4.2 Colors ----------- */
+
+    /* -------- Primary-Color ------- */
+    --primary-color-1: #00b871;
+    --primary-color-2: #30df84;
+    --primary-color-3: #F4FBF7;
+    --primary-color-3: #fff;
+    --primary-color-hover: #2FDF84;
+
+    /* ------- Secondary-color ------ */
+    --secondary-color-1: #161E2E;
+    --secondary-color-2: #9BA4B0;
+    --secondary-color-3: #D2D6DC;
+    --secondary-color-4: #F7F7F8;
+
+    /* ---------------- spacing --------------- */
+    --size-1: clamp(.5rem, 1vw, 1rem);
+    --size-2: clamp(1rem, 2vw, 1.5rem);
+    --size-3: clamp(1.5rem, 3vw, 2rem);
+    --size-4: clamp(2rem, 4vw, 3rem);
+    --size-5: clamp(4rem, 5vw, 5rem);
+    --size-6: clamp(5rem, 7vw, 7.5rem);
+    --size-7: clamp(7.5rem, 10vw, 10rem);
+    --size-8: clamp(10rem, 20vw, 15rem);
+    --size-9: clamp(15rem, 30vw, 20rem);
+    --size-10: clamp(20rem, 40vw, 30rem);
+
+/* ---------- Box Shadow ---------- */
+
+    --box-1: 1px 1px 6px rgba(0, 184, 113, 0.15);
+    --box-2: 0px 6px 16px 4px rgba(47, 223, 132, 0.15);
+    --box-2: 0px 10px 24px rgba(0, 184, 113, 0.5);
+
+
+
+  }
+
+/* ############################################ */
+/*                5.COMPONENTS                  */
+/* ############################################ */
+
+/* ------------------ 5.1 Buttons ----------------- */
+
+.xd__btn{
+    background-color: var(--primary-color-1);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    transition:  background-color 0.3s ease-in-out;
+    -webkit-transition:  background-color 0.3s ease-in-out;
+    -moz-transition:  background-color 0.3s ease-in-out;
+    -ms-transition:  background-color 0.3s ease-in-out;
+    -o-transition:  background-color 0.3s ease-in-out;
+}
+  .xd__btn__hover:hover{
+    background-color: var(--primary-color-hover);
+  }
+
+  .xd__btn a{
+    color: #fff;
+    text-transform: capitalize;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* |||||||||||||||||||||||||||||||||||||||||| */
+
+
+.xd__btn--pry{
+  font-size: 18px;
+  padding: 14px 32px;
+  color: #fff;
+  background-color: var(--primary-color-1);
+    border-radius: 4px;
+    transition:  background-color 0.3s ease-in-out;
+    -webkit-transition:  background-color 0.3s ease-in-out;
+    -moz-transition:  background-color 0.3s ease-in-out;
+    -ms-transition:  background-color 0.3s ease-in-out;
+    -o-transition:  background-color 0.3s ease-in-out;
+}
+
+
+
+
+  /* --------------- 5.2 Subheading --------------- */
+  /* Green subheading before title */
+  
+  .xd__p{
+    line-height: 27px;
+    /* margin-bottom: var(--size-2); */
+    color: var(--primary-color-1);
+  }
+
+  
+
+  /* ########################################## */
+  /*                  6. HEADER                 */
+  /* ########################################## */
+
+header{
+    padding-block: var(--size-2);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* hide the checkbox default on 
+purpose to trigger an toggle event */
+#menu_checkbox {
+  display: none;
+}
+
+
+.main__nav{
+    flex: 1;
+}
+
+.main__ul{
+    gap: 3rem;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+}
+
+.nav__btn img{
+ transition: transform 1s linear;
+ -webkit-transition: transform 1s linear;
+ -moz-transition: transform 1s linear;
+ -ms-transition: transform 1s linear;
+ -o-transition: transform 1s linear;
+}
+  
+.nav__btn img:hover{
+ transform: translatex(8px);
+ -webkit-transform: translatex(8px);
+ -moz-transform: translatex(8px);
+ -ms-transform: translatex(8px);
+ -o-transform: translatex(8px);
+}
+  
+
+/* --------------6.1 Drop Down Menu -------------- */
+
+.dropdown{
+  position: relative;
+  
+}
+
+/* Hide the nested dropdown content by default */
+.dropdown-content {
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top: 40px;
+    max-width: 350px;
+    width: 330px;
+    /* this will make the dropdown delay .5 
+    which is much forgiving on mouse event */
+    transition: 0.2s .5s; 
+    -webkit-transition: 0.2s .5s;
+    -moz-transition: 0.2s .5s;
+    -ms-transition: 0.2s .5s;
+    -o-transition: 0.2s .5s;
+}
+
+/* Style the dropdown arrow */
+.dropdown .fa-solid {
+ color: var(--primary-color-1);
+ cursor: pointer;
+}
+
+
+
+
+
+/* Show the dropdown content when the user hovers over the dropdown link */
+.dropdown:hover .dropdown-content {
+      position: absolute;
+      z-index: 1;
+      max-width: 350px;
+      width: 330px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: var(--size-3) 0;
+      box-shadow: var(--box-2);
+      z-index: 10;
+      opacity: 1;
+      left: -100%;
+      background-color: #FFFFFF;
+      transition: opacity 0.7s linear 0.2s;
+      -webkit-transition: opacity 0.7s linear 0.2s;
+      -moz-transition: opacity 0.7s linear 0.2s;
+      -ms-transition: opacity 0.7s linear 0.2s;
+      -o-transition: opacity 0.7s linear 0.2s;
+}
+
+
+/* Style the dropdown content */
+.dropdown-content li {
+  margin-bottom: var(--size-1);
+  padding: var(--size-1) var(--size-2);
+  border-radius: 10px;
+
+}
+
+.dropdown-content li:hover {
+  background-color: #F4FBF7;
+}
+
+
+.dropdown__grid{
+  display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.dropdown__p{
+  color: var(--secondary-color-1);
+}
+
+.dropdown__p p:first-child{
+  color: #00B871;
+}
+/* -------------- .dropdown Ends -------------- */
+
+/* ----------------- Btn Model ---------------- */
+#checkbox-modal{
+  display: none;
+}
+
+#checkbox-modal :checked .modal-wrapper {
+  display:block; 
+}
+
+.modal-wrapper {
+   display:none; 
+   position: absolute;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  background-color: var(--primary-color-3);
+  padding: var(--size-1) var(--size-5);
+  border-radius: 5px;
+  max-width: 50vw;
+  position: relative;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-block: 2rem;
+}
+
+.modal-header h2{
+  font-size: var(--font-2);
+  line-height: 46px;
+  margin-bottom: 1rem;
+
+}
+
+.modal-header p{
+  max-width: 40ch;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #aaa;
+  outline: none;
+  position: absolute;
+  top: 5%;
+  left: 95%;
+
+}
+
+.close-modal:hover {
+  color: #000;
+}
+
+.open-modal {
+  cursor: pointer;
+}
+
+.modal-content {
+  margin-block: var(--size-3);
+}
+
+/* Show modal on click */
+.nav__btn.xd__btn.xd__btn__hover .open-modal:focus + img {
+  transform: rotate(90deg);
+}
+
+.nav__btn.xd__btn.xd__btn__hover .open-modal:focus ~ .modal-wrapper {
+  display: block;
+}
+
+
+
+/* ----------- Content Inside Modal ----------- */
+
+.row{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.col{
+  padding: 0;
+    margin: 0;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    align-content: space-between;
+}
+
+.form-group{
+  flex: 1;
+}
+
+
+.form-group label{
+  display: none;
+}
+
+
+
+.form-group input
+{
+  outline: 0;
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  width: 100%;
+  box-shadow: 0px 0px 0px 4px #2fdf84;
+}
+
+::placeholder {
+padding-left: 0.5rem;
+font-size: 14px;
+color: var(--secondary-color-2);
+text-transform: capitalize;
+}
+
+textarea{
+  outline: 0;
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  width: 100%;
+  height: 12rem;
+  box-shadow: 0px 0px 0px 4px #2fdf84;
+
+
+
+  }
+
+
+
+.col__long1{
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+
+.col__long2{
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 3;
+
+}
+
+
+
+.btn__submit{
+  display: flex;
+  align-items: center;
+  border: none;
+  color: var(--primary-color-3);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ Modal Content Ends ------------ */
+
+
+/* -------------- Theme Switcher -------------- */
+
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:var(--secondary-color-2);
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 30px;
+  outline: 1px solid var(--primary-color-1);
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  left: 9%;
+  bottom: 15%;
+  -webkit-box-shadow: inset 20px -1px 20px 20px #fff000;
+  box-shadow: inset 20px -1px 20px 20px #fff000;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+
+
+input:checked + .slider {
+  background-color: rgba(38, 38, 93, 0.811);
+  outline: 1px solid var(--primary-color-1);
+}
+
+input:checked + .slider:before {
+  left: 23%;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+   box-shadow: inset 7px -5px 0px 0px #fff000;
+ -webkit-box-shadow: inset 7px -5px 0px 0px #fff000;
+}
+
+
+/* ------ Style For Dark Theme Goes Here ------ */
+
+:root:has(input:checked ) {
+  --bg-color: var(--secondary-color-1);
+  --text-color: var(--primary-color-3);
+  
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------- Dark Theme Ends ------------- */
+
+
+/* ############################################ */
+/*                  7. HERO                     */
+/* ############################################ */
+
+#hero{
+
+}
+
+.hero{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  justify-items: center;
+  align-items: center;
+  padding-block: var(--size-5);
+  gap: 2rem;
+  max-width: 1440px;
+}
+
+
+.hero__content{
+  display: grid;
+    gap: 0.2rem;
+    justify-content: space-evenly;
+    align-items: baseline;
+    justify-items: flex-start;
+
+}
+
+.hero__content h1{
+    font-size: var(--font-1);
+    line-height: 1.4;
+    color: var(--text-color);
+
+}
+
+.hero__content p{
+  color: var(--text-color);
+  font-size: 18px;
+  margin-block: 1rem 2rem;
+ 
+}
+
+
+.hero__btn{
+  color: #fff !important;
+  text-transform: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################################ */
+/*                 MEDIA QUIRES                 */
+/* ############################################ */
+
+
+
+ /* ########################################### */
+ /*              MOBILE TO 450PX              */
+ /* ########################################### */
+
+@media (max-width:450px){
+
+
+
+
+
+
+
+
+}
+/* -------- Media Quire For Mobile Ends ------- */
+
+
+  /* ########################################## */
+  /*        TABLET FROM  768PX / 950PX          */
+  /* ########################################## */
+
+@media (min-width:768px) and (max-width:950px){
+
+
+
+
+
+
+
+}
+/* -------- Media Quire For Tablet Ends ------- */
+
+
+
+
+
+
+
+
+ /* ########################################### */
+ /*      MEDIA QUIRE FOR NAV MENU ON TOGGLE     */
+ /* ########################################### */
+
+@media (max-width:1080px){
+
+/* -------------- Hamburger Icon -------------- */
+ /* Hide the navigation menu by default */
+ .main__nav {
+  display: none;
+
+}
+
+/* Show the navigation menu when the checkbox is checked */
+#menu_checkbox:checked ~ .main__nav {
+    display: block;
+    top: 80px;
+    position: absolute;
+    height: 100%;
+    background-color: var(--primary-color-1);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+   
+}
+
+.dropdown-content {
+  transition: unset;
+  -webkit-transition: unset;
+}
+
+
+.dropdown:hover .dropdown-content{
+  background-color: #fff;
+  position: unset; 
+  width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: var(--size-3) 0;
+    box-shadow: var(--box-2);
+}
+
+/* Style the dropdown arrow */
+.dropdown .fa-solid {
+  color: #fff;
+ }
+ 
+
+.main__ul{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+
+}
+
+.main__ul a{
+  color: #fff;
+}
+
+.nav__btn{
+  width: 80%;
+    margin: 0 auto;
+    background-color: var(--primary-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------- Theme Switcher -------------- */
+.switch{
+  position: absolute;
+  top: -56px;
+  left: 50%;
+}
+
+
+/* --------- Hamburger Menu Transition -------- */
+label {
+  transition: 0.6s ease transform;
+  cursor: pointer;
+  -webkit-transition: 0.6s ease transform;
+  -moz-transition: 0.6s ease transform;
+  -ms-transition: 0.6s ease transform;
+  -o-transition: 0.6s ease transform;
+}
+
+label div {
+  width: 6px;
+  height: 3px;
+  background-color: var(--primary-color-2);
+  margin-left: 0;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  transition: 0.5s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,    0.3s ease background-color;
+  -webkit-transition: 0.5s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,    0.3s ease background-color;
+  -moz-transition: 0.5s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,    0.3s ease background-color;
+  -ms-transition: 0.5s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,    0.3s ease background-color;
+  -o-transition: 0.5s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,    0.3s ease background-color;
+}
+
+label div:first-child {
+  width: 18px;
+}
+
+label div:nth-child(2) {
+  width: 8px;
+}
+
+label div:last-child {
+  width: 18px;
+  margin-bottom: 0;
+}
+
+#menu_checkbox:checked + label {
+  transform: translateY(0) rotateZ(-90deg);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  
+}
+
+#menu_checkbox:checked + label div {
+  width: 10px;
+  margin-left: 12px;
+  margin-bottom: 3px;
+  background-color: var(--primary-color-2);
+}
+
+
+/* -------------- Transition Ends ------------- */
+
+.modal-wrapper{
+  transform: none;
+  
+}
+
+.modal {
+  
+  transform: translate(-50%, 0);
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
