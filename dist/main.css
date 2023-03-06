@@ -16,11 +16,12 @@
   }
 
   body {
+    position: relative;
     max-width: 1440px;
     margin: 0 auto;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Gordita', sans-serif;
+    font-family: 'Lato', sans-serif;  
     background-color:var(--bg-color);
     transition:  background-color 0.5s linear;
     -webkit-transition:  background-color 0.5s linear;
@@ -38,12 +39,15 @@
     font: inherit;
   }
 
-  p, h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     font-weight: 400;
     font-size: 16px;
   }
-
+p{
+  overflow-wrap: break-word;
+    font-size: 16px;
+}
   #root, #__next {
     isolation: isolate;
   }
@@ -54,9 +58,7 @@
 
 /* ------- Custom Font Family ------ */
 
-   @import url('https://fonts.cdnfonts.com/css/gordita?styles=44677,44675,44671');
-
-                
+  
 
 
 /* ----------- 2.1 Basic Reset ---------- */
@@ -203,7 +205,7 @@ header{
     padding-block: var(--size-2);
     justify-content: space-between;
     align-items: center;
-
+  
 }
 
 /* hide the checkbox default on 
@@ -331,24 +333,17 @@ purpose to trigger an toggle event */
 /* -------------- .dropdown Ends -------------- */
 
 /* ----------------- Btn Model ---------------- */
-#checkbox-modal{
-  display: none;
-}
-
-#checkbox-modal :checked .modal-wrapper {
-  display:block; 
-}
-
 .modal-wrapper {
-   display:none; 
-   position: absolute;
+    display:none;
+    position: absolute;
     z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
+    
 }
 
 .modal {
@@ -356,10 +351,12 @@ purpose to trigger an toggle event */
   padding: var(--size-1) var(--size-5);
   border-radius: 5px;
   max-width: 50vw;
-  position: relative;
+  max-height: 100%;
+  position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
+ 
 }
 
 
@@ -367,18 +364,19 @@ purpose to trigger an toggle event */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-block: 2rem;
+  margin-bottom: 2rem;
 }
 
 .modal-header h2{
   font-size: var(--font-2);
   line-height: 46px;
   margin-bottom: 1rem;
+  
 
 }
 
 .modal-header p{
-  max-width: 40ch;
+  max-width: 45ch;
 }
 
 .close-modal {
@@ -386,10 +384,10 @@ purpose to trigger an toggle event */
   border: none;
   font-size: 28px;
   cursor: pointer;
-  color: #aaa;
+  color: var(--primary-color-1);
   outline: none;
   position: absolute;
-  top: 5%;
+  top: 0;
   left: 95%;
 
 }
@@ -405,16 +403,6 @@ purpose to trigger an toggle event */
 .modal-content {
   margin-block: var(--size-3);
 }
-
-/* Show modal on click */
-.nav__btn.xd__btn.xd__btn__hover .open-modal:focus + img {
-  transform: rotate(90deg);
-}
-
-.nav__btn.xd__btn.xd__btn__hover .open-modal:focus ~ .modal-wrapper {
-  display: block;
-}
-
 
 
 /* ----------- Content Inside Modal ----------- */
@@ -453,7 +441,6 @@ purpose to trigger an toggle event */
   border-radius: 4px;
   border: none;
   padding: 0.5rem;
-  font-size: 1.1rem;
   font-family: inherit;
   width: 100%;
   box-shadow: 0px 0px 0px 4px #2fdf84;
@@ -461,9 +448,11 @@ purpose to trigger an toggle event */
 
 ::placeholder {
 padding-left: 0.5rem;
-font-size: 14px;
+font-size: 0.8rem;
+font-family: inherit;
 color: var(--secondary-color-2);
 text-transform: capitalize;
+margin-left: 1rem;
 }
 
 textarea{
@@ -471,7 +460,6 @@ textarea{
   border-radius: 4px;
   border: none;
   padding: 0.5rem;
-  font-size: 1.1rem;
   font-family: inherit;
   width: 100%;
   height: 12rem;
@@ -507,9 +495,6 @@ textarea{
   color: var(--primary-color-3);
   cursor: pointer;
 }
-
-
-
 
 
 
@@ -653,6 +638,8 @@ input:checked + .slider:before {
     font-size: var(--font-1);
     line-height: 1.4;
     color: var(--text-color);
+    max-width: var(--size-10);
+    
 
 }
 
@@ -773,8 +760,12 @@ input:checked + .slider:before {
 @media (max-width:450px){
 
 
-
-
+/* ------------------ Header ------------------ */
+  .modal {
+    max-width: 100%;
+    width: 100%;
+    padding: var(--size-1) var(--size-3);
+  }
 
 
 
@@ -789,6 +780,12 @@ input:checked + .slider:before {
 
 @media (min-width:768px) and (max-width:950px){
 
+
+/* ------------------ Header ------------------ */
+  .modal {
+    max-width: 80%;
+    width: 100%;
+  }
 
 
 
@@ -951,7 +948,6 @@ label div:last-child {
 
 .modal {
   
-  transform: translate(-50%, 0);
 
 
 }

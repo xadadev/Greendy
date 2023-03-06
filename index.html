@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<!-- ----------------- Font ------------------ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- ------------- Main Css -------------- -->
     <link rel="stylesheet" href="./dist/main.css" />
 
     <title>Greendy | Landing page</title>
   </head>
   <body>
-
     <!-- ##################################### -->
     <!--                HEADER                 -->
     <!-- ##################################### -->
@@ -110,144 +112,120 @@
           <li><a href="#">reviews</a></li>
           <li><a href="#">blog</a></li>
         </ul>
-
+        <!-- modal btn| will open and close modal window also btn in nav -->
         <div class="nav__btn xd__btn xd__btn__hover">
-          
-          <a class="open-modal" href="#">Get your website review
-          <img src="./graphics/icons/right arrow.svg" alt="arrow svg icon" />
-        </a>
-          <div class="modal-wrapper">
-            <div class="modal">
-              <div class="modal-header">
-                <h2>Get Your Free Website Checkup</h2>
-                <p>Discover main benefits and issues of your website and how to fix them.</p>
-                <button class="close-modal">&times;</button>
-              </div>
-              <div class="modal-content">
-                <!-- Modal content goes here -->
-<form action="">
+          <a href="#"
+            >Get your website review
+            <img src="./graphics/icons/right arrow.svg" alt="arrow svg icon" />
+          </a>
+        </div>
+        <!-- modal btn ends -->
 
-
+        <!-- ----------------- Modal ----------------- -->
+        <div class="modal-wrapper">
+          <div class="modal">
+            <div class="modal-header">
+              <h2>Get Your Free Website Checkup</h2>
+              <p>
+                Discover main benefits and issues of your website and how to fix
+                them.
+              </p>
+              <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-content">
+              <!-- Modal content goes here -->
+              <form action="">
                 <div class="card">
                   <div class="row">
                     <div class="col">
                       <div class="form-group">
                         <label>First Name</label>
-                        <input type="text" placeholder="first name" required>
+                        <input type="text" placeholder="first name" required/>
                       </div>
                     </div>
-                
+
                     <div class="col">
                       <div class="form-group">
                         <label>Email address</label>
-                        <input type="text" placeholder="Email address" required>
+                        <input type="text" placeholder="Email address" required/>
                       </div>
                     </div>
-                
+
                     <div class="col">
                       <div class="form-group">
                         <label>Phone Number</label>
-                        <input type="text"  placeholder="Phone Number">
+                        <input type="text" placeholder="Phone Number" />
                       </div>
                     </div>
-                
+
                     <div class="col">
                       <div class="form-group">
                         <label>Website url</label>
-                        <input type="text" placeholder="Website url">
+                        <input type="text" placeholder="Website url" />
                       </div>
                     </div>
-                
-                
-                    <div class=" col__long1">
+
+                    <div class="col__long1">
                       <div class="form-group">
                         <label>Message</label>
                         <textarea placeholder="Message..."></textarea>
                       </div>
                     </div>
 
-                    <div class=" col__long2">
-                   <button class="btn__submit xd__btn  xd__btn__hover" type="button"> Get my free checkup</button>
-                    
+                    <div class="col__long2">
+                     
+                      <input type="submit" value=" Get my free checkup" class="btn__submit xd__btn xd__btn__hover">
                     </div>
-                   
                   </div>
                 </div>
               </form>
 
-                
-                <!-- ------ Modal Ends ------- -->
-              </div>
+              <!-- ------ Modal content Ends ------- -->
             </div>
           </div>
         </div>
-        
+        <!-- ----------- Modal Ends ------------ -->
 
-
-
-
-
-
-
-       
         <!-- -------- Theme Switcher --------- -->
         <label class="switch">
-          <input type="checkbox" id="dark-mode-toggle">
+          <input type="checkbox" id="dark-mode-toggle" />
           <span class="slider"></span>
-      </label>
+        </label>
       </nav>
     </header>
-<!-- -------------- Header Ends -------------- -->
+    <!-- -------------- Header Ends -------------- -->
 
-
-<!-- ######################################### -->
-<!--                   HERO                    -->
-<!-- ######################################### -->
+    <!-- ######################################### -->
+    <!--                   HERO                    -->
+    <!-- ######################################### -->
     <main>
-<section id="hero">
-    <div class="hero wrap" >
-    <div class="hero__content">
-         <span class="xd__p">Award winning company</span>
-        <h1>Digital marketing agency and design. We grow your business online</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet 
-            felis egestas aug</p>
+      <section id="hero">
+        <div class="hero wrap">
+          <div class="hero__content">
+            <span class="xd__p">Award winning company</span>
+            <h1>
+              Digital marketing agency and design. We grow your business online
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              imperdiet felis egestas aug
+            </p>
             <a href="#" class="hero__btn xd__btn__hover xd__btn--pry">Start a Project</a>
-    </div>
+          </div>
 
-
-    <div class="hero__graphic">
-
-        <img src="./graphics/hero/hero-bg.png" alt="">
-    </div>
-    </div>
-</section>
+          <div class="hero__graphic">
+            <img src="./graphics/hero/hero-bg.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
-<!-- --------------- Hero Ends --------------- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- --------------- Hero Ends --------------- -->
 
     <!-- ##################################### -->
     <!--                FOOTER                 -->
     <!-- ##################################### -->
-    <footer>
-
-
-
-    </footer>
-<!-- -------------- Footer Ends -------------- -->
-
+    <footer></footer>
+    <!-- -------------- Footer Ends -------------- -->
 
     <!-- ######################################### -->
     <!--                  SCRIPTS                  -->
