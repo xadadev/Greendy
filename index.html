@@ -4,10 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- ----------------- Font ------------------ -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./graphics/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./graphics/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./graphics/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- ----------------- Font ------------------ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- --------------- Glide Css --------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
+    />
     <!-- ------------- Main Css -------------- -->
     <link rel="stylesheet" href="./dist/main.css" />
 
@@ -33,9 +64,9 @@
 
       <nav class="main__nav flx">
         <ul class="main__ul flx">
-          <li><a href="#">Who we are</a></li>
+          <li><a href="#who">Who we are</a></li>
           <li class="dropdown">
-            <a href="#">what we do</a>
+            <a href="#we">what we do</a>
             <i class="fa-solid fa-angle-down"></i>
             <ul class="dropdown-content">
               <li>
@@ -61,7 +92,7 @@
                   <img src="./graphics/icons/Header/ad.svg" alt="arrow right" />
                   <span class="dropdown__p">
                     <p>Digital and advertising</p>
-                    <p>cwe grow your online visibility</p>
+                    <p>we grow your online visibility</p>
                   </span>
 
                   <img
@@ -109,8 +140,8 @@
             </ul>
           </li>
 
-          <li><a href="#">reviews</a></li>
-          <li><a href="#">blog</a></li>
+          <li><a href="#testimonial">reviews</a></li>
+          <li><a href="#blog">blog</a></li>
         </ul>
         <!-- modal btn| will open and close modal window also btn in nav -->
         <div class="nav__btn xd__btn xd__btn__hover">
@@ -140,14 +171,18 @@
                     <div class="col">
                       <div class="form-group">
                         <label>First Name</label>
-                        <input type="text" placeholder="first name" required/>
+                        <input type="text" placeholder="first name" required />
                       </div>
                     </div>
 
                     <div class="col">
                       <div class="form-group">
                         <label>Email address</label>
-                        <input type="text" placeholder="Email address" required/>
+                        <input
+                          type="text"
+                          placeholder="Email address"
+                          required
+                        />
                       </div>
                     </div>
 
@@ -173,8 +208,11 @@
                     </div>
 
                     <div class="col__long2">
-                     
-                      <input type="submit" value=" Get my free checkup" class="btn__submit xd__btn xd__btn__hover">
+                      <input
+                        type="submit"
+                        value=" Get my free checkup"
+                        class="btn__submit xd__btn xd__btn__hover"
+                      />
                     </div>
                   </div>
                 </div>
@@ -204,13 +242,16 @@
           <div class="hero__content content">
             <span class="xd__p">Award winning company</span>
             <h1>
-              Digital marketing agency and design. We grow your business online
+              Empowering your online growth with digital marketing and design
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              imperdiet felis egestas aug
+              We focused on growing your business online with custom solutions
+              and expert strategies, we help you stand out in the crowded online
+              space and achieve your growth goals.
             </p>
-            <a href="#" class="hero__btn xd__btn__hover xd__btn--pry">Start a Project</a>
+            <a href="#" class="hero__btn xd__btn__hover xd__btn--pry"
+              >Start a Project</a
+            >
           </div>
 
           <div class="hero__graphic">
@@ -221,277 +262,519 @@
     </main>
     <!-- --------------- Hero Ends --------------- -->
 
-<!-- ######################################### -->
-<!--                  CLIENTS                  -->
-<!-- ######################################### -->
+    <!-- ######################################### -->
+    <!--                  CLIENTS                  -->
+    <!-- ######################################### -->
 
-<section id="clients">
-  <div class="clients__logo flx wrap" >
+    <section id="clients">
+      <div class="clients__logo flx wrap">
+        <img src="./graphics/clients/logo-1.png" alt="" />
+        <img src="./graphics/clients/logo-2.png" alt="" />
+        <img src="./graphics/clients/logo-3.png" alt="" />
+        <img src="./graphics/clients/logo-4.png" alt="" />
+        <img src="./graphics/clients/logo-5.png" alt="" />
+      </div>
+    </section>
 
-    <img src="./graphics/clients/logo-1.png" alt="">
-    <img src="./graphics/clients/logo-2.png" alt="">
-    <img src="./graphics/clients/logo-3.png" alt="">
-    <img src="./graphics/clients/logo-4.png" alt="">
-    <img src="./graphics/clients/logo-5.png" alt="">
+    <!-- ######################################### -->
+    <!--                WHO WE ARE                 -->
+    <!-- ######################################### -->
+    <section id="who">
+      <div class="who wrap">
+        <div class="who__content content">
+          <span class="xd__p">Who we are</span>
+          <h2>Top #1 marketing agency in the world</h2>
+          <p>
+            We are the world's leading marketing agency, dedicated to delivering
+            exceptional results for our clients. With our expertise and passion
+            for innovation, we help businesses thrive and achieve success.
+          </p>
+          <a href="#" class="who__btn xd__btn__hover xd__btn--pry"
+            >Get in Touch</a
+          >
+        </div>
 
-  </div>
-</section>
+        <div class="hero__graphic">
+          <img src="./graphics/who-we-are/bg.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ######################################### -->
+    <!--               WHY CHOOSE US               -->
+    <!-- ######################################### -->
 
-<!-- ######################################### -->
-<!--                WHO WE ARE                 -->
-<!-- ######################################### -->
-<section id="who">
-  <div class="who wrap">
-    <div class="who__content content">
-      <span class="xd__p">Who we are</span>
-      <h2>
-        Top #1 marketing agency in the world
+    <section id="why">
+      <h2 class="why__title">
+        Why top Ecommerce and startup companies choose us :
       </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet felis egestas augue.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet felis egestas augue.
-      </p>
-      <a href="#" class="who__btn xd__btn__hover xd__btn--pry">Get in Touch</a>
-    </div>
+      <div class="container wrap">
+        <div class="box box-1">
+          <img src="./graphics/why-choose-us/img-1.png" alt="" />
+          <h3>We are commerce first</h3>
+          <p>We are improving businesses based on our vast experience.</p>
+        </div>
+        <div class="box box-2">
+          <img src="./graphics/why-choose-us/img-2.png" alt="" />
+          <h3>We are commerce first</h3>
+          <p>We are improving businesses based on our vast experience.</p>
+        </div>
+        <div class="box box-3">
+          <img src="./graphics/why-choose-us/img-3.png" alt="" />
+          <h3>We are commerce first</h3>
+          <p>We are improving businesses based on our vast experience.</p>
+        </div>
+        <div class="box box-4">
+          <img src="./graphics/why-choose-us/img-4.png" alt="" />
+          <h3>We are commerce first</h3>
+          <p>We are improving businesses based on our vast experience.</p>
+        </div>
+        <div class="graphic">
+          <img src="./graphics/why-choose-us/bg.png" alt="" />
+        </div>
+        <div class="why__cta">
+          <a href="#" class="why__btn xd__btn--pry xd__btn__hover">
+            lets chat
+            <img src="./graphics/icons/right arrow.svg" alt="arrow svg icon" />
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="hero__graphic">
-      <img src="./graphics/who-we-are/bg.png" alt="" />
-    </div>
-  </div>
-</section>
-<!-- ######################################### -->
-<!--               WHY CHOOSE US               -->
-<!-- ######################################### -->
+    <!-- ######################################### -->
+    <!--                  NUMBERS                  -->
+    <!-- ######################################### -->
+    <section id="number">
+      <div class="number wrap">
+        <h2>The proofs is in the numbers</h2>
 
-<section id="why" >
-  <h2  class="why__title" >Why top Ecommerce and startup companies choose us :</h2>
-<div class="container wrap">
- 
-  <div class="box box-1">
-    <img src="./graphics/why-choose-us/img-1.png" alt="">
-    <h3>We are commerce first</h3>
-    <p>We are improving businesses based on our vast experience.</p>
-  </div>
-  <div class="box box-2">
-    <img src="./graphics/why-choose-us/img-1.png" alt="">
-    <h3>We are commerce first</h3>
-    <p>We are improving businesses based on our vast experience.</p>
-  </div>
-  <div class="box box-3">
-    <img src="./graphics/why-choose-us/img-1.png" alt="">
-    <h3>We are commerce first</h3>
-    <p>We are improving businesses based on our vast experience.</p>
-  </div>
-  <div class="box box-4">
-    <img src="./graphics/why-choose-us/img-1.png" alt="">
-    <h3>We are commerce first</h3>
-    <p>We are improving businesses based on our vast experience.</p>
-  </div>
-  <div class="graphic">
-    <img src="./graphics/why-choose-us/bg.png" alt="">
-  </div>
-  <a href="#" class="why__btn xd__btn--pry xd__btn__hover"> lets chat
-    <img src="./graphics/icons/right arrow.svg" alt="arrow svg icon">
-  </a>
-</div>
+        <div class="number__wrap">
+          <span class="number__count"
+            >+534%
 
-</section>
+            <p>People Reached</p>
+          </span>
 
-<!-- ######################################### -->
-<!--                  NUMBERS                  -->
-<!-- ######################################### -->
-<section id="number">
- 
-<div class="number wrap"> 
-  <h2>The proofs is in the numbers</h2>
+          <span class="number__count"
+            >+215%
 
-  <div class="number__wrap">
-  <span class="number__count">+534%
- 
-<p>People Reached</p>
-</span>
+            <p>client boosts</p>
+          </span>
 
-<span class="number__count">+215%
+          <span class="number__count"
+            >+801%
+            <p>Company Expansion</p>
+          </span>
+          <span class="number__count"
+            >+379%
 
-  <p>client boosts</p>
-  </span>
+            <p>website launches</p>
+          </span>
+        </div>
+      </div>
+    </section>
 
-  <span class="number__count">+801%
-    <p>Company Expansion</p>
-    </span>
-    <span class="number__count">+379%
+    <!-- ######################################### -->
+    <!--                WHAT WE DO                 -->
+    <!-- ######################################### -->
 
-      <p>website launches</p>
-      </span>
-    </div>
-</div>
-</section>
+    <section id="we">
+      <div class="we wrap">
+        <div class="we__heading">
+          <h2>What We Do</h2>
+          <p>
+            We are flexible and cope with multiple tasks to make you a leader in
+            the market.
+          </p>
+        </div>
 
-<!-- ######################################### -->
-<!--                WHAT WE DO                 -->
-<!-- ######################################### -->
+        <div class="we__grid">
+          <div class="we__graphic">
+            <img src="./graphics/what-we-do/bg-1.png" alt="" />
+          </div>
+          <div class="we__title">
+            <h2>Good Design Increases Sales</h2>
+          </div>
+          <div class="service we__box-1">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Strategy & Research</h3>
+            <p>
+              Based on deep researching we create the best strategy due to your
+              needs.
+            </p>
+          </div>
+          <div class="service we__box-2">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Development</h3>
+            <p>We create the best solution relying on own platforms.</p>
+          </div>
+          <div class="service we__box-3">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Strategy & visual design</h3>
+            <p>
+              It is possible to see the future result with the prognosticate
+              ground plan.
+            </p>
+          </div>
+          <div class="service we__box-4">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Conversion optimization</h3>
+            <p>
+              We teach your call-center team how to talk efficiently to your
+              clients.
+            </p>
+          </div>
+        </div>
 
-<section id="we">
-  <div class="we wrap">
+        <!-- ------------------ 2 ------------------ -->
 
- <div class="we__heading">
-  <h2>What We Do</h2>
-  <p>We are flexible and cope with multiple tasks to make you a leader in the market.</p>
+        <div class="we__grid gird-2">
+          <div class="we__title">
+            <h2>Get More Customers with Google Ads</h2>
+          </div>
+          <div class="service we__box-1">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Campaign developmenth</h3>
+            <p>
+              Create your unique advertisement easily without extra time or
+              money.
+            </p>
+          </div>
+          <div class="service we__box-2">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Campaign launch</h3>
+            <p>
+              Start your commerce with the social media announcement. Get more
+              client without much effort.
+            </p>
+          </div>
+          <div class="service we__box-3">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Optimization</h3>
+            <p>
+              Save your money with the simple upgrades and enjoy your profit
+              instantly.
+            </p>
+          </div>
+          <div class="service we__box-4">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Measurement</h3>
+            <p>
+              Discover the website activity with the analytics tools simply and
+              unmistakably.
+            </p>
+          </div>
 
- </div>
- 
-  <div class="we__grid">
-    <div class="we__graphic">
-      <img src="./graphics/what-we-do/bg-1.png" alt="">
-    </div>
-    <div class="we__title">
-      <h2>Good Design Increases Sales</h2>
-    </div>
-    <div class="service we__box-1">
-      <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-      <h3>Strategy and Research</h3>
-      <p>Based on deep researching we create the best strategy due to your needs.</p>
-    </div>
-    <div class="service we__box-2">
-      <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-      <h3>Development</h3>
-      <p>We create the best solution relying on own platforms, the experience of our partners and modern tendency.</p>
-    </div>
-    <div class="service we__box-3">
-      <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-      <h3>Strategy & visual design</h3>
-      <p>It is possible to see the future result with the prognosticate ground plan.</p>
-    </div>
-    <div class="service we__box-4">
-      <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-      <h3>Conversion optimization</h3>
-      <p>We teach your call-center team how to talk efficiently to your clients.</p>
-    </div>
-  </div>
+          <div class="we__graphic">
+            <img src="./graphics/what-we-do/bg-2.png" alt="" />
+          </div>
+        </div>
+        <!-- ------------------- 3 ------------------- -->
+        <div class="we__grid">
+          <div class="we__graphic">
+            <img src="./graphics/what-we-do/bg-3.png" alt="" />
+          </div>
+          <div class="we__title">
+            <h2>Show Up when People Search for What You Sell</h2>
+          </div>
+          <div class="service we__box-1">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>SEO audit</h3>
+            <p>
+              Analyze your next steps and in which way it will have impact on
+              the selling results.
+            </p>
+          </div>
+          <div class="service we__box-2">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>On-page SEO</h3>
+            <p>
+              Optimize every word on your page for increasing the sales and
+              reach the top of Google searching.
+            </p>
+          </div>
+          <div class="service we__box-3">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Targeted content</h3>
+            <p>
+              The targeting content helps you to push ahead less popular
+              categories of goods.
+            </p>
+          </div>
+          <div class="service we__box-4">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Off-page SEO</h3>
+            <p>
+              This strategy helps you to increase the trust level to your online
+              store.
+            </p>
+          </div>
+        </div>
 
+        <!-- ------------------- 4 ------------------- -->
 
-  <!-- ------------------ 2 ------------------ -->
-  
-  <div class="we__grid gird-2">
-    
-    <div class="we__title">
-      <h2>Get More Customers with Google Ads</h2>
-    </div>
-    <div class="service we__box-1">
-      <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-      <h3>Campaign developmenth</h3>
-      <p>Create your unique advertisement easily without extra time or money.</p>
-    </div>
-    <div class="service we__box-2">
-      <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-      <h3>Campaign launch</h3>
-      <p>Start your commerce with the social media announcement. Get more client without much effort.</p>
-    </div>
-    <div class="service we__box-3">
-      <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-      <h3>Optimization</h3>
-      <p>Save your money with the simple upgrades and enjoy your profit instantly.</p>
-    </div>
-    <div class="service we__box-4">
-      <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-      <h3>Measurement</h3>
-      <p>Discover the website activity with the analytics tools simply and unmistakably.</p>
-    </div>
+        <div class="we__grid gird-2">
+          <div class="we__title">
+            <h2>Grow Your Business with Social Media</h2>
+          </div>
+          <div class="service we__box-1">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Authentic storytelling</h3>
+            <p>
+              Tell your clients which were your first steps and failures in this
+              business.
+            </p>
+          </div>
+          <div class="service we__box-2">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Optimized ads</h3>
+            <p>
+              Optimize every word on your page for increasing the sales and
+              reach the top of Google searching.
+            </p>
+          </div>
+          <div class="service we__box-3">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Community Engagement</h3>
+            <p>Develop business with similar companies or partners.</p>
+          </div>
+          <div class="servicewe__box-4">
+            <img src="./graphics/what-we-do/box1_icon-1.png" alt="" />
+            <h3>Fostering Growth</h3>
+            <p>
+              The accent on social media activities increases the number of your
+              clients.
+            </p>
+          </div>
 
-    <div class="we__graphic">
-      <img src="./graphics/what-we-do/bg-2.png" alt="">
-    </div>
-  </div>
-<!-- ------------------- 3 ------------------- -->
-<div class="we__grid">
-  <div class="we__graphic">
-    <img src="./graphics/what-we-do/bg-3.png" alt="">
-  </div>
-  <div class="we__title">
-    <h2>Show Up when People Search for What You Sell</h2>
-  </div>
-  <div class="service we__box-1">
-    <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-    <h3>SEO audit</h3>
-    <p>Analyze your next steps and in which way it will have impact on the selling results.</p>
-  </div>
-  <div class="service we__box-2">
-    <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-    <h3>On-page SEO</h3>
-    <p>Optimize every word on your page for increasing the sales and reach the top of Google searching.</p>
-  </div>
-  <div class="service we__box-3">
-    <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-    <h3>Targeted content</h3>
-    <p>The targeting content helps you to push ahead less popular categories of goods.</p>
-  </div>
-  <div class="service we__box-4">
-    <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-    <h3>Off-page SEO</h3>
-    <p>This strategy helps you to increase the trust level to your online store.</p>
-  </div>
-</div>
+          <div class="we__graphic">
+            <img src="./graphics/what-we-do/bg-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ######################################### -->
+    <!--                   BLOG                    -->
+    <!-- ######################################### -->
+    <section id="blog">
+      <div class="wrap">
+        <div class="blog__title">
+          <h2>Why you need multiple marketing strategies</h2>
+          <p>Choose your best ecommerce store</p>
+        </div>
 
+        <div class="blog__grid">
+          <!-- ------------------ 1 ------------------ -->
+          <div class="article post-1">
+            <img src="./graphics/blog/post-1.png" alt="" />
+            <p class="xd__p">Marketing</p>
+            <a href="">
+              <h2>Online marketing step by step</h2>
+            </a>
+            <p>
+              Expert guidance for successful online marketing. Follow us for
+              step-by-step strategies to grow your business...
+            </p>
+            <a href="#" class="blog__btn xd__btn--pry xd__btn__hover"
+              >Read more
+              <img
+                src="./graphics/icons/right arrow.svg"
+                alt="arrow svg icon"
+              />
+            </a>
+          </div>
+          <!-- ------------------- 2 ------------------- -->
+          <div class="article post-2">
+            <img src="./graphics/blog/post-2.png" alt="" />
+            <p class="xd__p">Design</p>
+            <a href="">
+              <h2>Digital Design Trends to Watch in 2023</h2>
+            </a>
+            <p>
+              Stay ahead of the curve with our expert analysis of the top
+              digital design trends to watch for in 2023...
+            </p>
+            <a href="#" class="blog__btn xd__btn--pry xd__btn__hover"
+              >Read more
+              <img
+                src="./graphics/icons/right arrow.svg"
+                alt="arrow svg icon"
+              />
+            </a>
+          </div>
+          <!-- ------------------- 3 ------------------- -->
+          <div class="article post-3">
+            <img src="./graphics/blog/post-3.png" alt="" />
+            <p class="xd__p">Marketing</p>
+            <a href="">
+              <h2>Mastering Social Media for Business</h2>
+            </a>
+            <p>
+              Get the most out of your social media marketing efforts with our
+              expert tips and insights...
+            </p>
+            <a href="#" class="blog__btn xd__btn--pry xd__btn__hover"
+              >Read more
+              <img
+                src="./graphics/icons/right arrow.svg"
+                alt="arrow svg icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ######################################### -->
+    <!--                TESTIMONIAL                -->
+    <!-- ######################################### -->
+    <section id="testimonial">
+      <div class="wrap">
+        <div class="testimonal__title">
+          <h2>What our client say</h2>
+          <p>
+            We are flexible and cope with multiple tasks to make you a leader in
+            the market.
+          </p>
+        </div>
 
+        <div class="testimonial">
+          <div class="glide" id="options-autoplay">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <!-- ------------------ 1 ------------------ -->
+                  <div class="review clinet-1">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam urna, tempor in penatibus ullamcorper. In quis purus
+                      pharetra scelerisque sed id eleifend erat. Integer
+                      imperdiet nullam eget lectus. Fames urna, ut lacus, et eu
+                      nunc integer consequat.
+                    </p>
 
+                    <img src="./graphics/testimonial/profile-img.jpg" alt="" />
+                    <div class="client__detail">
+                      <p>name</p>
+                      <p>job title</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <!-- ------------------- 2 ------------------- -->
+                  <div class="review clinet-2">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam urna, tempor in penatibus ullamcorper. In quis purus
+                      pharetra scelerisque sed id eleifend erat. Integer
+                      imperdiet nullam eget lectus. Fames urna, ut lacus, et eu
+                      nunc integer consequat.
+                    </p>
 
+                    <img src="./graphics/testimonial/profile-img.jpg" alt="" />
+                    <div class="client__detail">
+                      <p>name</p>
+                      <p>job title</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <!-- ------------------ 3 ------------------ -->
+                  <div class="review clinet-3">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam urna, tempor in penatibus ullamcorper. In quis purus
+                      pharetra scelerisque sed id eleifend erat. Integer
+                      imperdiet nullam eget lectus. Fames urna, ut lacus, et eu
+                      nunc integer consequat.
+                    </p>
 
-<!-- ------------------- 4 ------------------- -->
+                    <img src="./graphics/testimonial/profile-img.jpg" alt="" />
+                    <div class="client__detail">
+                      <p>name</p>
+                      <p>job title</p>
+                    </div>
+                  </div>
+                </li>
 
-<div class="we__grid gird-2">
-    
-  <div class="we__title">
-    <h2>Grow Your Business with Social Media</h2>
-  </div>
-  <div class="service we__box-1">
-    <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-    <h3>Authentic storytelling</h3>
-    <p>Tell your clients which were your first steps and failures in this business.</p>
-  </div>
-  <div class="service we__box-2">
-    <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-    <h3>Optimized ads</h3>
-    <p>Optimize every word on your page for increasing the sales and reach the top of Google searching.</p>
-  </div>
-  <div class="service we__box-3">
-    <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-    <h3>Community Engagement</h3>
-    <p>Develop business with similar companies or partners.</p>
-  </div>
-  <div class="servicewe__box-4">
-    <img src="./graphics/what-we-do/box1_icon-1.png" alt="">
-    <h3>Fostering Growth</h3>
-    <p>The accent on social media activities increases the number of your clients.</p>
-  </div>
+                <li class="glide__slide">
+                  <!-- ------------------ 4 ------------------ -->
+                  <div class="review clinet-4">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Etiam urna, tempor in penatibus ullamcorper. In quis purus
+                      pharetra scelerisque sed id eleifend erat. Integer
+                      imperdiet nullam eget lectus. Fames urna, ut lacus, et eu
+                      nunc integer consequat.
+                    </p>
 
-  <div class="we__graphic">
-    <img src="./graphics/what-we-do/bg-4.png" alt="">
-  </div>
-</div>
-
-</div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <img src="./graphics/testimonial/profile-img.jpg" alt="" />
+                    <div class="client__detail">
+                      <p>name</p>
+                      <p>job title</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <input
+            type="range"
+            id="options-autoplay-input"
+            min="0"
+            max="5000"
+            value="3000"
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- ##################################### -->
     <!--                FOOTER                 -->
     <!-- ##################################### -->
-    <footer></footer>
+    <footer>
+      <section id="footer " class="wrap">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <img src="./graphics/logo/logo-greendy.png" alt="" />
+            <p>
+              We focused on growing your business online With custom solutions
+              and expert strategies, we help you stand out in the crowded online
+              space and achieve your growth goals.
+            </p>
+          </div>
+
+          <div class="footer__menu">
+            <p>Menu</p>
+            <ul class="footer__ul flx">
+              <li><a href="#">Who we are</a></li>
+              <li><a href="#">what we do</a></li>
+              <li><a href="#">reviews</a></li>
+              <li><a href="#">blog</a></li>
+            </ul>
+          </div>
+
+          <div class="contact">
+            <p>contact</p>
+            <a href="">+1 (875) 40 1027</a>
+            <a href="">Support@company.com</a>
+          </div>
+
+          <div class="social-media">
+            <img src="./graphics/footer/ig.png" alt="" />
+            <img src="./graphics/footer/fb.png" alt="" />
+            <img src="./graphics/footer/tw.png" alt="" />
+          </div>
+        </div>
+
+        <!-- ---------- Copyright ---------- -->
+        <div class="copyrights">
+          <p>Copyright 2021 Greendy All Right Reserve</p>
+          <div class="footer__links">
+            <a href="#">Term of use</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </section>
+    </footer>
     <!-- -------------- Footer Ends -------------- -->
 
     <!-- ######################################### -->
@@ -506,5 +789,34 @@
       src="https://kit.fontawesome.com/1156e9b158.js"
       crossorigin="anonymous"
     ></script>
+    <!-- ------------- Glide Js -------------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+    <script>
+      new Glide(".glide").mount();
+
+      var input = document.querySelector("#options-autoplay-input");
+
+      var glide = new Glide("#options-autoplay", {
+        autoplay: input.value,
+        hoverpause: true,
+        perView: 2,
+        focusAt: "center",
+        breakpoints: {
+          800: {
+            perView: 1,
+          },
+        },
+      });
+
+      input.addEventListener("input", function (event) {
+        glide.update({
+          autoplay: event.target.value != 0 ? event.target.value : false,
+        });
+      });
+
+      glide.mount();
+    </script>
+    <!-- ----------- Glide Js Ends ----------- -->
   </body>
 </html>
