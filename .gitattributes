@@ -1,2 +1,4 @@
 dist/script.js linguist-language=JavaScript
 *.css linguist-language=CSS
+
+# test lang for github
